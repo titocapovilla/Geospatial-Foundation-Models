@@ -1,0 +1,33 @@
+# Dataset files
+Lucas_Chips_Geo_Italy/
+*.tar.gz
+
+# Old training analisys
+Training_Analysis.ipynb
+
+# Training outputs
+output/
+lightning_logs/
+
+# Split files
+train_split.txt
+val_split.txt
+
+# Checkpoints
+checkpoints/
+*.ckpt
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Mac files
+.DS_Store
+._*
+
+# Virtual Environments
+venv/
+.venv/
+env/
+

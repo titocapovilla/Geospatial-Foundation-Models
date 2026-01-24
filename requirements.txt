@@ -1,0 +1,25 @@
+# Core ML frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+lightning>=2.0.0
+
+# Geospatial
+terratorch @ git+https://github.com/IBM/terratorch.git
+torchgeo
+rasterio
+albumentations
+
+# Data handling
+pandas
+numpy
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+tensorboard
+
+# Utilities
+gdown
+Pillow
+requests
