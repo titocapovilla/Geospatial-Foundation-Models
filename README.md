@@ -9,11 +9,11 @@ This repository contains the code and experimental logs for fine-tuning the **Te
 - **Core Experiment:** Comparing loss functions (Class-Weighted Cross-Entropy vs. Focal Loss) and decoder architectures (Identity vs. MLP) to handle imbalance.
 
 ## Methodology
-1.  **Data Pipeline:** Retrieval of Sentinel-2 derived imagery, statistical normalization, and a custom **stratified train-validation split** to preserve rare classes.
-2.  **Architecture:**
+**Data Pipeline:** Retrieval of Sentinel-2 derived imagery, statistical normalization, and a custom **stratified train-validation split** to preserve rare classes.
+**Architecture:**
     * **Backbone:** TerraMind-v1-base (Pre-trained).
     * **Decoders:** Tested **Identity Decoder** (lightweight linear probing) vs. **MLP Decoder** (non-linear spatial processing).
-3.  **Training Strategy:**
+**Training Strategy:**
     * **Optimizer:** AdamW (lr=1e-4) with reduced weight decay (0.05).
     * **Precision:** 16-bit mixed precision for efficiency.
     * **Loss Functions:** Evaluated **Class-Weighted Cross-Entropy** against **Class-Weighted Focal Loss**.
