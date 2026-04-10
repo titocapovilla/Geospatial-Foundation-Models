@@ -24,6 +24,8 @@ This repository contains the code and experimental logs for fine-tuning the **Te
     * **Weighted Cross-Entropy** yielded higher loss ($\approx$ 1.69) but superior **Macro Accuracy** ($\approx$ 40%), maintaining significantly better recall for underrepresented classes.
 * **Decoder Impact:** The choice between MLP and Identity decoders had negligible impact on performance ($<0.5\%$ difference), suggesting the pre-trained backbone features are already robust.
 
+* Full report available at [Geospatial Foundation Models Report](docs/Geospatial_Foundation_Models_Report.pdf)
+
 ## How to Run
 1.  **Install Dependencies:**
     ```bash
